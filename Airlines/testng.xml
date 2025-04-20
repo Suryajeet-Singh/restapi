@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All test Suite Here">
+    <listeners>
+        <listener class-name="com.api.reporting.Setup"/>
+    </listeners>
+
+    <test name="AirlinesAPITest">
+        <classes>
+            <class name="com.api.AirlinesTest.FirstTest">
+                <methods>
+                    <include name="testPostAirline"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>
